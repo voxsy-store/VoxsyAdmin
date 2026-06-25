@@ -254,7 +254,7 @@ window.resetLockout=function(){
   document.getElementById('attemptInfo').textContent='';
   document.getElementById('loginStatus').className='status';
   showToast('✅ Lockout direset!');
-};
+window.togglePw = function(){
   const inp=document.getElementById('loginPassword');
   const btn=document.getElementById('pwToggle');
   if(inp.type==='password'){ inp.type='text'; btn.textContent='🙈'; }
